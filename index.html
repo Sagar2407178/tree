@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Family Tree</h1>
+        <div id="family-tree"></div>
+        
+        <h2>Add Family Member</h2>
+        <form id="family-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="relationship">Relationship:</label>
+            <select id="relationship">
+               
+            </select>
+            <label for="person">Select Node Of Person:</label>
+            <select id="person">
+                <!-- Options will be added dynamically by JavaScript based on the selected relationship -->
+            </select>
+
+            <button type="submit">Add Member</button>
+        </form>
+    </div>
+    <div >
+
+        <ul class="tree" id="tree">
+      
+          <!-- Root node (Category) -->
+          <li><div class="sticky" >Family Tree</div>
+            <ul id="mainnode">
+      
+           
+            </ul>
+          </li>
+   </ul>
+      
+      
+      </div>
+      
+    <script src="app.js"></script>
+    <script src="Untitled-2.js"></script>
+
+</body>
+</html>
